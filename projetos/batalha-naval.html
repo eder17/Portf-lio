@@ -9,15 +9,46 @@
 	<title>Batalha Naval</title>
 </head>
 <body bgcolor=#fbffe6>
-	<img src="imagens/navio.png" width="250">
-	<h1>Batalha Naval</h1>
-	<p>O Batalha Naval que foi feito, é uma versão com regras diferenciadas do jogo. Funcionando pelo protocolo IP, o objetivo do jogo é ser o último sobrevivente.</p>
-	<h2>Armazenamento</h2>
-	<p>O software armazena informações atráves de um banco de dados interno. Foi usado o PostgreSQL, pois sua estrutura facilita seu uso.</p>
-	<h2>Desenvolvimento</h2>
-	<p>A línguagem usada para desenvolver foi Java, pois contém bibliotecas nativas de interface gráfica. A IDE utilizada foi o <a href="https://www.eclipse.org/">Eclipse</a>.</p>
-	<h2>Interface</h2>
-	<a href="interface.pdf">Clique aqui para abrir um descritivo da interface do Batalha Naval.</a>
+	<center><img src="imagens/navio.png" width="250">
+		<h1>Batalha Naval</h1>
+		<p>O Batalha Naval que foi feito, é uma versão com regras diferenciadas do jogo. Funcionando pelo protocolo IP, o objetivo do jogo é ser o último sobrevivente.</p>
+		<h2>Armazenamento</h2>
+		<p>O software armazena informações atráves de um banco de dados interno. Foi usado o PostgreSQL, pois sua estrutura facilita seu uso.</p>
+		<h2>Desenvolvimento</h2>
+		<p>A línguagem usada para desenvolver foi Java, pois contém bibliotecas nativas de interface gráfica. A IDE utilizada foi o <a href="https://www.eclipse.org/">Eclipse</a>.</p>
+		<h2>Interface</h2>
+		<p>1 - Primeiramente é apresentada uma tela, onde o programa pede a senha do navio:</p>
+		<img src="imagens/batalha-1.png" width="600">
+		<p>2 - Se for clicado no botão OK e não for inserido nada na caixa de texto ou for digitado a senha errada,</p> 
+		<p>ou for inserido caracteres não numéricos, o programa informará um erro:</p>
+		<img src="imagens/batalha-2.png" width="600">
+		<p>3 - Se for inserido a senha numérica correta, o programa irá redirecionar a tela principal do jogo:</p> 
+		<img src="imagens/batalha-3.png" width="250">
+		<p>Na tela, estão os botões Atualizar Mapa, Atacar, Mover, e Histórico e quatro campos de textos</p>
+		<p>para serem inseridos valores e o painel que mostra as posições dos navios no mar:</p> 
+		<img src="imagens/batalha-31.png" width="600">
+		<p>4 - Ao clicar no botão Atualizar Mapa, é mostrado as posições dos navios, através dos botões</p>
+		<p>do painel. Logo aṕos, o botão fica indisponível por 5 segundos:</p>
+		<img src="imagens/batalha-4.png" width="600">
+		<p>Ele seleciona as posições através do comando “select * from jogo;”.</p>
+		<br><p>5 - Ao serem inseridos valores numéricos nos dois campos de texto inferiores, e ao clicar no</p>
+			<p>botão Mover, o jogo envia ao banco de dados remoto, os valores de aceleração de movimento</p>
+			<p>dos dois campos de texto:</p>
+			<img src="imagens/batalha-5.png" width="600">
+		<p>6 - Para confirmar a nova posição, deve ser clicado no botão Atualizar Mapa:</p>
+		<img src="imagens/batalha-6.png" width="600">
+		<p>7 - Ao serem inseridos dois valores numéricos nos campos superiores, e ao clicar no botão</p>
+		<p>Atacar, o jogo envia ao banco de dados remoto, os valores da posição onde se deseja atacar:</p>
+		<img src="imagens/batalha-7.png" width="600">
+		<p>8 -Se for clicado no botão Atacar e os dois campos de textos superiores não forem preenchidos, o jogo abre uma janela indicando o erro:</p>
+		<img src="imagens/batalha-8.png" width="600">
+		<p>9 - Se for clicado no botão Mover e os dois campos inferiores não forem preenchidos, o jogo abre uma janela indicando o erro:</p>
+		<img src="imagens/batalha-9.png" width="600">
+		<p>10 - O botão historico abre uma janela, que exibe na tela os valores da tabela local “historico”:</p>
+		<img src="imagens/batalha-10.png" width="600">
+
+	</center>
+	
 </body>
 <div id="rodape"><a href="/portfolio" title="Clique aqui para voltar"><img src="imagens/voltar.png" width="50"/></a></div>
 
